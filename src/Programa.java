@@ -2,7 +2,7 @@ import juego.Carrera;
 import juego.Coche;
 import juego.Reloj;
 
-public class Main {
+public class Programa {
     public static void main(String[] args) {
         Coche coche1 = new Coche("coche");
         Coche coche2 = new Coche("coche2");
@@ -21,12 +21,12 @@ public class Main {
 
         carrera.comenzarCarrera(true);
 
-        Reloj tiempoCoche1 = new Reloj(0, 30, 60);
-        Reloj tiempoCoche2 = new Reloj(0, 30, 10);
-        Reloj tiempoCoche3 = new Reloj(0, 31, 5);
-        Reloj tiempoCoche4 = new Reloj(0, 30, 11);
-        Reloj tiempoCoche5 = new Reloj(0, 30, 9);
-        Reloj tiempoCoche6 = new Reloj(0, 31, 10);
+        Reloj tiempoCoche1 = new Reloj(1, 30, 60);
+        Reloj tiempoCoche2 = new Reloj(1, 30, 10);
+        Reloj tiempoCoche3 = new Reloj(2, 5, 5);
+        Reloj tiempoCoche4 = new Reloj(1, 30, 11);
+        Reloj tiempoCoche5 = new Reloj(2, 15, 9);
+        Reloj tiempoCoche6 = new Reloj(1, 31, 10);
 
         carrera.registrarTiempoVueltaCoche(tiempoCoche1, "coche");
         carrera.registrarTiempoVueltaCoche(tiempoCoche2, "coche2");

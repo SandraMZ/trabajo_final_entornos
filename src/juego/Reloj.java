@@ -17,7 +17,7 @@ public class Reloj {
         if(validarHora(horas)){
             this.horas = horas;
         } else{
-            this.horas = horas - 12;
+            this.horas = 0;
         }
 
         if (validarMinuto(minutos)){
@@ -52,7 +52,7 @@ public class Reloj {
         if(validarHora(horas)){
             this.horas = horas;
         } else{
-            this.horas = horas - 24;
+            this.horas = 0;
         }
     }
 
