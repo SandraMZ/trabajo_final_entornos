@@ -6,7 +6,7 @@ public class Coche {
 
     public Coche(String nombre){
         this.nombre = nombre;
-        this.tiempoVuelta = new Reloj(0,0,0);
+        this.tiempoVuelta = new Reloj();
     }
 
     public String getNombre() {

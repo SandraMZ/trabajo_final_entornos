@@ -17,19 +17,21 @@ public class Reloj {
         if(validarHora(horas)){
             this.horas = horas;
         } else{
-            this.horas = 0;
+            this.horas = horas - 12;
         }
 
         if (validarMinuto(minutos)){
             this.minutos = minutos;
         }else{
-            this.minutos = 0;
+            this.minutos = minutos - 60;
+            this.horas++;
         }
 
         if (validarSegundo(segundos)) {
             this.segundos = segundos;
         } else{
-            this.segundos = 0;
+            this.segundos = segundos - 60;
+            this.minutos++;
         }
 
     }
@@ -50,7 +52,7 @@ public class Reloj {
         if(validarHora(horas)){
             this.horas = horas;
         } else{
-            this.horas = 0;
+            this.horas = horas - 24;
         }
     }
 
@@ -58,7 +60,8 @@ public class Reloj {
         if (validarMinuto(minutos)){
             this.minutos = minutos;
         }else{
-            this.minutos = 0;
+            this.minutos = minutos - 60;
+            this.horas++;
         }
     }
 
@@ -66,7 +69,8 @@ public class Reloj {
         if (validarSegundo(segundos)) {
             this.segundos = segundos;
         } else{
-            this.segundos = 0;
+            this.segundos = segundos - 60;
+            this.minutos++;
         }
     }
 
@@ -77,7 +81,6 @@ public class Reloj {
         if(validarHora(horas)){
             this.horas = horas;
         } else{
-            this.horas = 0;
             correcto = false;
         }
 
@@ -85,7 +88,6 @@ public class Reloj {
         if (validarMinuto(minutos)){
             this.minutos = minutos;
         }else{
-            this.minutos = 0;
             correcto = false;
         }
 
@@ -93,7 +95,6 @@ public class Reloj {
         if (validarSegundo(segundos)) {
             this.segundos = segundos;
         } else{
-            this.segundos = 0;
             correcto = false;
         }
         return  correcto;
